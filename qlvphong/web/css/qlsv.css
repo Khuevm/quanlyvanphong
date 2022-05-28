@@ -1,0 +1,244 @@
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {							/*Nút đăng xuất*/
+    float: right;
+    display: block;
+    color: #4c7060eb;
+    text-align: center;
+    padding: 14px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {					 /*Nút đăng xuất khi rê chuột lên trên*/
+    background-color: #4c7060eb;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+#header1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 9%;
+    background-color: #009999;
+    border: none;
+    
+}
+
+#header2{
+    position: absolute;
+    margin-top: 51px;
+    color: gray;
+    right: 0;
+    width: 100%;
+    height:100%;
+    padding-top: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#DDDDDD;
+    border: none;
+}
+#header3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height:9%;
+    background-color: #009999;
+    border: none;
+}
+
+body{  
+    overflow: hidden;
+}
+
+#noidung1{
+
+    background-color: white;
+    overflow: scrollbar; 
+    overflow-x: hidden; 
+    position: absolute;
+    top: 100px;
+    left: 430px;
+    right: 100px;
+    width: 845px;
+    height: 509px;
+    border-radius: 10px;
+}
+
+button#back{
+    height: 50px;
+    width: 50px;
+    background-image: url(../anh/backbtn.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    border: none;
+    background-size:100% 100%;
+    size: 5%;
+    float: left;
+    margin-left: 0;
+}
+
+#noidung2{
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    margin-left: 70 px;
+    margin-top: 10 px;
+    width: 390px;
+    height: 509px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+  
+}
+
+#copyright{
+    width: 100%;
+    height: 5%;
+    position: relative;
+    bottom: 0;
+    left:0;
+    text-align: center; 
+    background-color: silver;
+}
+
+input[type=text], select {
+    width: 95%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(0, 94, 57);
+    box-sizing: border-box;
+    opacity: 0.8;					/*Hiệu ứng làm mờ*/
+}
+
+
+.eff6{
+    color: black;
+    margin-left: 440px;
+}
+
+#usernamelogin{
+    color: #00b506;
+    text-align: center;
+    font: bold;
+}
+
+label{
+    font-size: 16px;
+    padding-left: 4px;
+
+}
+
+option{
+    font-size: 20px;
+}
+
+button{
+    padding: auto;
+    top: 20px;
+    float: auto;
+    margin: 2px 20px 0px 20px;
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: lightblue;
+}
+
+button#get{
+    height:20px; 
+    width:20px; 
+    background-color: white; 
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    padding: 8px;
+    border: 0.5px solid #ddd;
+    text-align: center;
+    background-color:gray;
+    color: white;
+}
+
+td{
+    padding: 8px;
+    border: 0.5px solid #ddd;
+    text-align: center;
+    background-color:white;
+    color: black;
+}
+
+.demuc{
+    background-color: black;
+    font-size: 20px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #828282;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: green;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
