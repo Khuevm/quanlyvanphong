@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `qlvp` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `qlvp`;
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
 -- Host: localhost    Database: qlvp
@@ -18,30 +16,31 @@ USE `qlvp`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `phong`
+-- Table structure for table `hopdong`
 --
 
-DROP TABLE IF EXISTS `phong`;
+DROP TABLE IF EXISTS `hopdong`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `phong` (
-  `sophong` varchar(10) NOT NULL,
-  `makhunha` varchar(10) DEFAULT NULL,
-  `soluongSV` int DEFAULT NULL,
-  `hienco` int DEFAULT NULL,
-  `ghichu` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`sophong`)
+CREATE TABLE `hopdong` (
+  `mahopdong` varchar(10) NOT NULL,
+  `makhach` varchar(10) DEFAULT NULL,
+  `matoanha` varchar(10) DEFAULT NULL,
+  `ngaybd` date DEFAULT NULL,
+  `ngaykt` date DEFAULT NULL,
+  `trangthai` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`mahopdong`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `phong`
+-- Dumping data for table `hopdong`
 --
 
-LOCK TABLES `phong` WRITE;
-/*!40000 ALTER TABLE `phong` DISABLE KEYS */;
-INSERT INTO `phong` VALUES ('1','2',3,4,'5555');
-/*!40000 ALTER TABLE `phong` ENABLE KEYS */;
+LOCK TABLES `hopdong` WRITE;
+/*!40000 ALTER TABLE `hopdong` DISABLE KEYS */;
+INSERT INTO `hopdong` VALUES ('HD1','khach2','TN1','2022-05-04','2022-06-14','Con thoi han'),('HD2','khach1','TN1','2022-04-26','2022-06-03','Con thoi han'),('HD3','khach1','TN1','2022-04-25','2022-05-18','Het thoi han');
+/*!40000 ALTER TABLE `hopdong` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-15 23:40:43
+-- Dump completed on 2022-05-28 22:30:21

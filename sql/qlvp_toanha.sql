@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `qlvp` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `qlvp`;
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
 -- Host: localhost    Database: qlvp
@@ -18,31 +16,30 @@ USE `qlvp`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `sinhvien`
+-- Table structure for table `toanha`
 --
 
-DROP TABLE IF EXISTS `sinhvien`;
+DROP TABLE IF EXISTS `toanha`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `sinhvien` (
-  `masv` varchar(10) NOT NULL,
-  `hoten` varchar(30) DEFAULT NULL,
-  `gioitinh` varchar(10) DEFAULT NULL,
-  `ngaysinh` date DEFAULT NULL,
-  `sdt` varchar(10) DEFAULT NULL,
-  `lop` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`masv`)
+CREATE TABLE `toanha` (
+  `matoanha` varchar(10) NOT NULL,
+  `dientich` varchar(25) DEFAULT NULL,
+  `soluong` int DEFAULT NULL,
+  `loai` varchar(25) DEFAULT NULL,
+  `ghichu` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`matoanha`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `sinhvien`
+-- Dumping data for table `toanha`
 --
 
-LOCK TABLES `sinhvien` WRITE;
-/*!40000 ALTER TABLE `sinhvien` DISABLE KEYS */;
-INSERT INTO `sinhvien` VALUES ('123','f','nu','2022-04-27','11111','hh');
-/*!40000 ALTER TABLE `sinhvien` ENABLE KEYS */;
+LOCK TABLES `toanha` WRITE;
+/*!40000 ALTER TABLE `toanha` DISABLE KEYS */;
+INSERT INTO `toanha` VALUES ('TN1','100 m2',5,'Khep kin','Con trong'),('TN2','100 m2',2,'Khong khep kin','Het cho'),('TN3','100 m2',5,'Khep kin','Het cho');
+/*!40000 ALTER TABLE `toanha` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -54,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-15 23:40:43
+-- Dump completed on 2022-05-28 22:30:22
